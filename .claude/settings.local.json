@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: add Claude Code comprehensive usage guide *)",
+      "Bash(git remote *)",
+      "Bash(git -c user.name=\"Kiro\" -c user.email=\"kiro@kiro.dev\" commit -m \"docs: add contributors section to README\")",
+      "Bash(git push *)",
+      "Bash(git -c user.name=\"Kiro\" -c user.email=\"kiro@kiro.dev\" commit -m \"docs: add CONTRIBUTORS.md and improve contributors section in README\")",
+      "Bash(cp -r /Users/yunfan/Claudecode/.claude/skills/* /Users/yunfan/Claudecode/examples/skills/)",
+      "Bash(git -c user.name=Kiro -c user.email=kiro@kiro.dev commit -m 'feat: add 7 new slash commands *)"
     ]
   }
 }
