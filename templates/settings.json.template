@@ -1,0 +1,52 @@
+{
+  "model": "claude-sonnet-4-6",
+  "defaultMode": "default",
+  "autoMemoryEnabled": true,
+
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo rm *)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)"
+    ]
+  },
+
+  "env": {
+    "NODE_ENV": "development"
+  },
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "prettier --write $CLAUDE_FILE_PATHS 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Claude Code session ended' >> ~/.claude/sessions.log"
+          }
+        ]
+      }
+    ]
+  }
+}
