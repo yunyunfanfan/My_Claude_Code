@@ -72,3 +72,7 @@ claude-code-guide/
     ├── CLAUDE.md.template        # 项目 CLAUDE.md 模板
     └── settings.json.template    # settings.json 模板
 ```
+
+## Contributors
+
+本仓库由 [yunyunfanfan](https://github.com/yunyunfanfan) 与 [Kiro](https://kiro.dev)（AI 编程助手）共同整理完成。
