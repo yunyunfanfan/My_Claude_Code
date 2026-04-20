@@ -1,0 +1,20 @@
+{
+  "skill_name": "paper-diagram-prompt",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我的方法叫 GraphUnlearn，分三个阶段：(A) 边遗忘：给定原始图G，用GNN(f_G)提取节点嵌入，删除目标边后用GNN(f̂)重新提取，计算边遗忘损失L_EU；(B) 特征遗忘：对删除特征的节点，用两个GNN分别处理原始输入和剩余图，计算KL散度作为特征遗忘损失L_FU；(C) 节点遗忘：L_NU = αL_EU + L_FU。帮我生成 Gemini 绘图 prompt。",
+      "expected_output": "A detailed English Gemini prompt with panel layout A/B/C, color specs, node descriptions, arrows, and academic style note"
+    },
+    {
+      "id": 2,
+      "prompt": "我在做一个医学图像合成框架，包含：训练阶段有自编码器训练(E/D)和扩散模型训练；推理阶段输入源域图像x^A，通过编码器得到z^A，加上随机噪声z_T和条件c^B，经过ControlNet+LDM:UNet反向扩散，最后解码得到x̂^B。请帮我生成顶会论文风格的流程图 prompt。",
+      "expected_output": "Structured Gemini prompt with training/inference panels, dashed borders, pastel colors, math notation in nodes"
+    },
+    {
+      "id": 3,
+      "prompt": "帮我画一个 Transformer 架构图，包含 Multi-Head Attention、Feed Forward、Add & Norm 层，输入是 token embeddings + positional encoding，输出是 logits。",
+      "expected_output": "Gemini prompt describing vertical encoder stack with labeled blocks, residual connections, and academic styling"
+    }
+  ]
+}
