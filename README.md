@@ -8,6 +8,7 @@
 - [CLI 命令参考](./docs/cli-reference.md)
 - [CLAUDE.md 配置](./docs/claude-md.md)
 - [Skills 自定义命令](./docs/skills.md)
+- [官方 Skills 集合](./skills/README.md)
 - [Hooks 自动化](./docs/hooks.md)
 - [MCP 服务器集成](./docs/mcp.md)
 - [进阶用法](./docs/advanced.md)
@@ -63,6 +64,13 @@ claude-code-guide/
 │   ├── hooks.md                 # Hooks 自动化工作流
 │   ├── mcp.md                   # MCP 服务器集成
 │   └── advanced.md              # 进阶用法和技巧
+├── skills/                      # 官方 Skills 集合（来自 anthropics/skills）
+│   ├── frontend-design/         # 生成高质量前端界面
+│   ├── canvas-design/           # Canvas 画布设计
+│   ├── theme-factory/           # 主题生成工厂
+│   ├── web-artifacts-builder/   # Web 制品构建
+│   ├── webapp-testing/          # Web 应用测试
+│   └── skill-creator/           # 创建新 Skills 的 Skill
 ├── examples/
 │   ├── claude-md/               # CLAUDE.md 示例
 │   ├── skills/                  # Skills 示例
