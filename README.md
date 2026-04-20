@@ -1,6 +1,8 @@
 # Claude Code 完整用法指南
 
 > 基于官方文档整理的 Claude Code 核心用法、进阶技巧和最佳实践
+>
+> 最后更新：2026年4月20日
 
 ## 目录
 
@@ -64,13 +66,14 @@ claude-code-guide/
 │   ├── hooks.md                 # Hooks 自动化工作流
 │   ├── mcp.md                   # MCP 服务器集成
 │   └── advanced.md              # 进阶用法和技巧
-├── skills/                      # 官方 Skills 集合（来自 anthropics/skills）
+├── skills/                      # Skills 集合
 │   ├── frontend-design/         # 生成高质量前端界面
 │   ├── canvas-design/           # Canvas 画布设计
 │   ├── theme-factory/           # 主题生成工厂
 │   ├── web-artifacts-builder/   # Web 制品构建
 │   ├── webapp-testing/          # Web 应用测试
-│   └── skill-creator/           # 创建新 Skills 的 Skill
+│   ├── skill-creator/           # 创建新 Skills 的 Skill
+│   └── paper-diagram-prompt/    # 生成顶会论文流程图的 Gemini 指令
 ├── examples/
 │   ├── claude-md/               # CLAUDE.md 示例
 │   ├── skills/                  # Skills 示例
