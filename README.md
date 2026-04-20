@@ -4,6 +4,40 @@
 >
 > 最后更新：2026年4月20日
 
+## 更新日志
+
+### 2026-04-20
+
+**新增 Skills（共 9 个，均已安装至 `~/.claude/skills/`）**
+
+| Skill | 来源 | 功能 |
+|-------|------|------|
+| `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills) | 生成高质量、有个性的前端界面，避免 AI 通用审美 |
+| `canvas-design` | [anthropics/skills](https://github.com/anthropics/skills) | 基于设计哲学生成 `.png` / `.pdf` 视觉艺术作品 |
+| `theme-factory` | [anthropics/skills](https://github.com/anthropics/skills) | 从品牌描述生成完整配色主题，支持 10 种预设 |
+| `web-artifacts-builder` | [anthropics/skills](https://github.com/anthropics/skills) | 构建多组件 React + Tailwind + shadcn/ui 制品 |
+| `webapp-testing` | [anthropics/skills](https://github.com/anthropics/skills) | 用 Playwright 测试本地 Web 应用，截图 + 日志 |
+| `skill-creator` | [anthropics/skills](https://github.com/anthropics/skills) | 创建、测试、迭代新 Skills 的元 Skill |
+| `paper-diagram-prompt` | 自建 | 读取论文或方法描述，生成 Gemini 顶会流程图绘图指令 |
+| `plot-from-data` | [Trae1ounG/paper-plot-skills](https://github.com/Trae1ounG/paper-plot-skills) | 8 种预设学术图表风格（柱状/折线/散点/雷达），输入数据直接生成 300dpi 图 |
+| `plot-from-image` | [Trae1ounG/paper-plot-skills](https://github.com/Trae1ounG/paper-plot-skills) | 上传论文截图，分析字体/配色/比例，输出可复现的 matplotlib 代码 |
+
+**Skills 使用示例**
+
+```
+# 前端设计
+"帮我设计一个现代化的登录页面"
+
+# 论文架构图（支持直接给论文 PDF）
+"基于这篇论文帮我生成流程图 prompt"
+
+# 数据绘图
+"把这组数据画成 bar chart，用 bar_paired_delta 风格"
+
+# 复现论文图
+上传论文截图 + "复现这个图"
+```
+
 ## 目录
 
 - [快速开始](#快速开始)
@@ -66,14 +100,16 @@ claude-code-guide/
 │   ├── hooks.md                 # Hooks 自动化工作流
 │   ├── mcp.md                   # MCP 服务器集成
 │   └── advanced.md              # 进阶用法和技巧
-├── skills/                      # Skills 集合
+├── skills/                      # Skills 集合（9 个）
 │   ├── frontend-design/         # 生成高质量前端界面
 │   ├── canvas-design/           # Canvas 画布设计
 │   ├── theme-factory/           # 主题生成工厂
 │   ├── web-artifacts-builder/   # Web 制品构建
 │   ├── webapp-testing/          # Web 应用测试
 │   ├── skill-creator/           # 创建新 Skills 的 Skill
-│   └── paper-diagram-prompt/    # 生成顶会论文流程图的 Gemini 指令
+│   ├── paper-diagram-prompt/    # 生成顶会论文流程图的 Gemini 指令
+│   ├── plot-from-data/          # 8 种预设风格学术数据图表
+│   └── plot-from-image/         # 从论文截图复现 matplotlib 图
 ├── examples/
 │   ├── claude-md/               # CLAUDE.md 示例
 │   ├── skills/                  # Skills 示例
