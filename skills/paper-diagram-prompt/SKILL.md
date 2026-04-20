@@ -44,9 +44,30 @@ The target aesthetic is the standard figure style seen in NeurIPS / CVPR / ICCV 
 
 ## Your Workflow
 
+### Step 0 — Parse the input (paper vs. direct description)
+
+The user may provide input in two forms:
+
+**Form A — Direct method description**: The user describes their model/pipeline in their own words. Proceed to Step 1 immediately.
+
+**Form B — A paper (PDF, text, or URL)**: The user pastes paper content or attaches a PDF. In this case:
+
+1. Read the paper thoroughly, focusing on: abstract, introduction, method/approach section, and any figure captions.
+2. Extract the method structure:
+   - Core contribution in one sentence
+   - Main components and their roles
+   - Data flow (inputs → intermediate representations → outputs)
+   - Distinct phases (training / inference / pre-training / fine-tuning / etc.)
+   - Loss functions and how they connect to modules
+   - Any special mechanisms (attention, graph structure, iterative loops, frozen modules)
+3. Write a brief **Method Summary** (3–5 bullet points) and show it to the user before proceeding. This confirms you understood the paper correctly.
+4. Then continue to Step 1 using your extracted understanding — do not ask the user to re-describe what you already read.
+
+If the paper is long or dense, focus on the section titled "Method", "Approach", "Model", or "Framework" and the main architecture figure caption.
+
 ### Step 1 — Understand the method
 
-Ask the user (or extract from their description) the following:
+Ask the user (or extract from their description / paper) the following:
 
 1. **What does the method do?** (one sentence)
 2. **What are the main components / modules?** (list them)
@@ -55,7 +76,7 @@ Ask the user (or extract from their description) the following:
 5. **Any special visual elements?** (frozen modules, loss functions, iterative loops, graphs/trees)
 6. **Preferred layout?** (left-right / top-bottom / grid; number of panels)
 
-If the user's description already answers most of these, proceed directly — don't ask redundant questions.
+If the user's description or the paper already answers most of these, proceed directly — don't ask redundant questions.
 
 ### Step 2 — Plan the layout
 
