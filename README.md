@@ -86,4 +86,4 @@ claude-code-guide/
 | | 名称 | 角色 | 贡献 |
 |---|---|---|---|
 | <img src="https://github.com/yunyunfanfan.png" width="40" height="40" style="border-radius:50%"> | [yunyunfanfan](https://github.com/yunyunfanfan) | 项目发起人 | 需求规划、内容审核、仓库维护 |
-| <img src="https://kiro.dev/favicon.ico" width="40" height="40" style="border-radius:50%"> | [Kiro](https://kiro.dev) | AI 编程助手 | 文档编写、示例代码、结构设计 |
+| <img src="https://anthropic.com/favicon.ico" width="40" height="40" style="border-radius:50%"> | [Claude](https://claude.ai) | AI 编程助手 | 文档编写、示例代码、结构设计 |
