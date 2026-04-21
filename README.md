@@ -2,9 +2,35 @@
 
 > 基于官方文档整理的 Claude Code 核心用法、进阶技巧和最佳实践
 >
-> 最后更新：2026年4月20日
+> 最后更新：2026年4月21日
 
 ## 更新日志
+
+### 2026-04-21
+
+**新增 6 个学术写作 Skills（来源：[awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) → [zechenzhangAGI/AI-research-SKILLs](https://github.com/zechenzhangAGI/AI-research-SKILLs)）**
+
+| Skill | 功能 |
+|-------|------|
+| `ml-paper-writing` | 面向 NeurIPS/ICML/ICLR/ACL/AAAI 的完整论文写作工作流，含模板、引用核查、格式迁移 |
+| `systems-paper-writing` | 面向 OSDI/SOSP/ASPLOS/NSDI 的系统论文写作，含段落蓝图、审稿人视角检查表 |
+| `academic-plotting` | 从论文描述生成架构图（调用 Gemini）或从数据生成 matplotlib 图表 |
+| `presenting-conference-talks` | 从论文生成会议 Beamer LaTeX 幻灯片 + PPTX + 演讲稿 |
+| `brainstorming-research-ideas` | 结构化研究方向头脑风暴，探索高影响力研究问题 |
+| `creative-thinking-for-research` | 基于认知科学框架（类比推理、约束操控等）激发创新研究思路 |
+
+**使用示例**
+
+```
+# 写 ML 论文
+"帮我把这个 GitHub repo 写成一篇 NeurIPS 论文"
+
+# 准备会议报告
+"基于这篇论文生成 20 分钟的 oral 幻灯片"
+
+# 研究头脑风暴
+"我在做图神经网络遗忘，帮我头脑风暴下一步研究方向"
+```
 
 ### 2026-04-20
 
@@ -100,7 +126,7 @@ claude-code-guide/
 │   ├── hooks.md                 # Hooks 自动化工作流
 │   ├── mcp.md                   # MCP 服务器集成
 │   └── advanced.md              # 进阶用法和技巧
-├── skills/                      # Skills 集合（9 个）
+├── skills/                      # Skills 集合（15 个）
 │   ├── frontend-design/         # 生成高质量前端界面
 │   ├── canvas-design/           # Canvas 画布设计
 │   ├── theme-factory/           # 主题生成工厂
@@ -109,7 +135,13 @@ claude-code-guide/
 │   ├── skill-creator/           # 创建新 Skills 的 Skill
 │   ├── paper-diagram-prompt/    # 生成顶会论文流程图的 Gemini 指令
 │   ├── plot-from-data/          # 8 种预设风格学术数据图表
-│   └── plot-from-image/         # 从论文截图复现 matplotlib 图
+│   ├── plot-from-image/         # 从论文截图复现 matplotlib 图
+│   ├── ml-paper-writing/        # ML 论文写作（NeurIPS/ICML/ICLR/ACL）
+│   ├── systems-paper-writing/   # 系统论文写作（OSDI/SOSP/ASPLOS）
+│   ├── academic-plotting/       # 论文图表生成（架构图 + 数据图）
+│   ├── presenting-conference-talks/ # 会议幻灯片生成（Beamer + PPTX）
+│   ├── brainstorming-research-ideas/ # 结构化研究方向头脑风暴
+│   └── creative-thinking-for-research/ # 认知科学框架激发创新思路
 ├── examples/
 │   ├── claude-md/               # CLAUDE.md 示例
 │   ├── skills/                  # Skills 示例
