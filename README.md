@@ -2,9 +2,25 @@
 
 > 基于官方文档整理的 Claude Code 核心用法、进阶技巧和最佳实践
 >
-> 最后更新：2026年4月21日
+> 最后更新：2026年4月22日
 
 ## 更新日志
+
+### 2026-04-22
+
+**新增 1 个 Skill（来源：[titanwings/colleague-skill](https://github.com/titanwings/colleague-skill)）**
+
+| Skill | 功能 |
+|-------|------|
+| `dot-skill` | 基于同事/关系/名人的真实材料（飞书/钉钉/Slack/邮件）生成可交互的 AI 角色 Skill |
+
+**使用示例**
+
+```
+/dot-skill
+```
+
+---
 
 ### 2026-04-21
 
@@ -126,7 +142,7 @@ claude-code-guide/
 │   ├── hooks.md                 # Hooks 自动化工作流
 │   ├── mcp.md                   # MCP 服务器集成
 │   └── advanced.md              # 进阶用法和技巧
-├── skills/                      # Skills 集合（15 个）
+├── skills/                      # Skills 集合（16 个）
 │   ├── frontend-design/         # 生成高质量前端界面
 │   ├── canvas-design/           # Canvas 画布设计
 │   ├── theme-factory/           # 主题生成工厂
@@ -141,7 +157,8 @@ claude-code-guide/
 │   ├── academic-plotting/       # 论文图表生成（架构图 + 数据图）
 │   ├── presenting-conference-talks/ # 会议幻灯片生成（Beamer + PPTX）
 │   ├── brainstorming-research-ideas/ # 结构化研究方向头脑风暴
-│   └── creative-thinking-for-research/ # 认知科学框架激发创新思路
+│   ├── creative-thinking-for-research/ # 认知科学框架激发创新思路
+│   └── dot-skill/               # 基于真实材料生成可交互 AI 角色 Skill
 ├── examples/
 │   ├── claude-md/               # CLAUDE.md 示例
 │   ├── skills/                  # Skills 示例
